@@ -100,3 +100,20 @@ You may wish to use ngrok https://ngrok.com to proxy a tunnel to your localhost 
 2. Creative license (some instructions above are explicite for brevity, if you find a better implementation, that is equivalent feel free to do it!)
 3. Testability
 4. On time submission. You will be given 48 hours to complete this challenge. 
+
+
+# How to run
+
+0. Set NGROK_TOKEN in .env 
+
+1. Build docker image 
+```
+docker build -t kelvinpompey/codechallenge .
+docker run -p 49160:3000 -d kelvinpompey/codechallenge
+docker logs <container id>
+```
+
+2. Copy the Ngrok URL printed to the console and set the SERVER_URL property in 
+Utils/Constants. 
+
+3. Run the app in Android Studio. 

@@ -10,8 +10,10 @@
   "author": "Kelvin Pompey",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
+    "ngrok": "^3.1.1",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
